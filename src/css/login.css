@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.nav-bar{
+    background-image: -webkit-gradient(linear,left top,right top,from(#15136d),to(#580b4a));
+    background-image: linear-gradient(90deg,#0d0c5f, #641155);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Pacifico", cursive;
+    margin: 3px 4px 4px 3px;
+}
+.menu {
+    list-style-type: none;
+    margin-top: -38px;
+    float: right;
+    margin-right: 50px;
+}
+.menu li {
+    display: inline-block;   
+}
+.menu a{
+    text-decoration: none; 
+    color: inherit;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 20px;    
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.menu a:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; 
+    
+}
+.logo{
+    display: flex;
+}
+#logo{
+    width: 48px;
+    margin-top: 3px;
+    height: 30px;
+    vertical-align: middle;
+}
+h3{
+    margin-top: 12px;
+    font-family: "Pacifico", cursive;
+    color: white;
+}
+.navbar-container{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+    padding: 25vh;
+}
+.content{
+    border-radius: 15px;
+    background-image: -webkit-gradient(linear,left top,right top,from(#15136d),to(#580b4a));
+    background-image: linear-gradient(90deg,#0d0c5f, #641155);  
+    width: 45vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+.first-content{
+    margin-top: 20px;    
+    display: flex;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+.title{
+    margin-left: 5px;
+}
+.second-content{
+    position: absolute;
+    display: none;
+}
+.first-colun{
+    margin-right: 120px;
+    margin-top: 55px;
+}
+.first-colun .title{
+    margin-bottom: 10px;
+}
+.btn{
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 150px;
+    color: black;
+}
+.second-colun{
+    margin-top: 55px;
+}
+input{
+    border-radius: 10px;
+    border-color: #a06d97;
+    margin-top: 3px;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.btn a{
+    color: black;
+}

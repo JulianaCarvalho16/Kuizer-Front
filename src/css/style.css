@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    
+}
+.nav-bar{
+    background-image: -webkit-gradient(linear,left top,right top,from(#15136d),to(#580b4a));
+    background-image: linear-gradient(90deg,#0d0c5f, #641155);
+    color: white;
+    border-radius: 5px;
+    font-family: "Pacifico", cursive;
+    margin: 3px 4px 4px 3px;
+}
+.logo{
+    display: flex;
+}
+#logo{
+    height: 48px;
+    width: 48px;
+    margin-top: 5px;
+}
+h4{
+    float: right;
+}
+h3{
+    margin-top: 12px;
+    font-family: "Pacifico", cursive;
+}
+.questao{
+    margin-bottom: 17px ;
+}
+h2{
+    font-family: "Pacifico", cursive;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    margin-top: 10px;
+}
+.imgp2{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#imgp{
+    width: 48%;
+}
+.botoes{
+    margin-top: 25.9px;
+    margin-left: 3%;
+    margin-right: 3%;
+    align-items: center;
+}
+input{
+    display: inline-block;
+    width: 43%;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 5px 13px 5px 50px;
+    background-color: #7f269b;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    transition: filter 0.2s;
+    align-items: center;
+}
+input:hover{
+    filter: brightness(0.9);
+    background-color: #a74ec2;
+}
+.nump{
+    margin-top: 10px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+li{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 2.5%;
+    width: 36px;
+    height: 25px;
+    padding-top: 0.5%;
+    border-radius: 24px;
+    background-color: #7f269b;
+    text-align: center;
+}
+.pergunta{
+    height: 90vh;
+}
+#perg1{
+    display: block;
+}
+.endGame{
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 250px;
+}
+span{
+    margin-left: 15px;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #7f269b;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.home{
+    margin-left: 2px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
