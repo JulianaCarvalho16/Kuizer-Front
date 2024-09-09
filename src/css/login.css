@@ -79,8 +79,8 @@ h3{
     border-radius: 15px;
     background-image: -webkit-gradient(linear,left top,right top,from(#15136d),to(#580b4a));
     background-image: linear-gradient(90deg,#0d0c5f, #641155);  
-    width: 45vw;
-    height: 30vh;
+    width: 50vw;
+    height: 35vh;
     display: flex;
     justify-content: center;
 }
@@ -101,7 +101,7 @@ h3{
     display: none;
 }
 .first-colun{
-    margin-right: 120px;
+    margin-right: 10vw;
     margin-top: 55px;
 }
 .first-colun .title{
