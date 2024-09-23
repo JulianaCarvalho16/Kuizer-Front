@@ -74,6 +74,7 @@ h3{
     justify-content: center;
     height: 65vh;
     padding: 25vh;
+    align-items: center;
 }
 .content{
     border-radius: 15px;
@@ -83,6 +84,8 @@ h3{
     height: 35vh;
     display: flex;
     justify-content: center;
+    margin-top: 20vw;
+    margin-left: 45vh;
 }
 .first-content{
     margin-top: 20px;    

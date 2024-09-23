@@ -24,10 +24,10 @@ exports.register = (req, res) => {
 
 
 exports.login = (req, res) => {
-    const { email, senha } = req.body;
+    const { email, password } = req.body;
 
     // Verifica se email e senha foram enviados
-    if (!email || !senha) {
+    if (!email || !password) {
         return res.status(400).json({ message: 'Email e senha são obrigatórios' });
     }
 
@@ -45,7 +45,7 @@ exports.login = (req, res) => {
         const user = results[0];
 
         // Comparar a senha fornecida com a senha armazenada no banco
-        const isMatch = bcrypt.compareSync(senha, user.password); // Use "password" ao invés de "senha"
+        const isMatch = bcrypt.compareSync(password, user.password); // Use "password" ao invés de "senha"
 
         if (!isMatch) {
             return res.status(400).json({ message: 'Credenciais inválidas' });
