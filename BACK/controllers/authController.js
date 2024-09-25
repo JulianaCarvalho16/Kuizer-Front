@@ -45,7 +45,11 @@ exports.login = (req, res) => {
         const user = results[0];
 
         // Comparar a senha fornecida com a senha armazenada no banco
+<<<<<<< HEAD
         const isMatch = bcrypt.compareSync(password, user.password); 
+=======
+        const isMatch = bcrypt.compareSync(password, user.password); // Use "password" ao invés de "senha"
+>>>>>>> 2f093489c261b089a7d7c5cda2b285fc1df6f2fb
 
         if (!isMatch) {
             return res.status(400).json({ message: 'Credenciais inválidas' });
