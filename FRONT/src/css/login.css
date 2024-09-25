@@ -74,18 +74,14 @@ h3{
     justify-content: center;
     height: 65vh;
     padding: 25vh;
-<<<<<<< HEAD
     border-radius: 10px;
-=======
     align-items: center;
->>>>>>> 2f093489c261b089a7d7c5cda2b285fc1df6f2fb
 }
 .content{
     border-radius: 15px;
     background-color: rgba(14, 14, 105, 0.658);
     width: 50vw;
     height: 35vh;
-<<<<<<< HEAD
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -98,14 +94,12 @@ h3{
     height: 100%;
     z-index: 1;
     border-radius: 15px;
-
-    left: 60%;
-=======
+    /*
+    left: 60%;*/
     display: flex;
     justify-content: center;
-    margin-top: 20vw;
-    margin-left: 45vh;
->>>>>>> 2f093489c261b089a7d7c5cda2b285fc1df6f2fb
+    /*margin-top: 20vw;
+    margin-left: 45vh;*/
 }
 .first-content{
     display: flex;
