@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,21 +19,25 @@
             <li><a href="#">Contato</a></li>
         </ul> 
     </nav>
-        <div class="content first-colun">
+    <div class="container">
+        <div class="content first-content">
             <div class="first-colun">
                 <h2 class="title">Olá, amigo!</h2>
                 <p class="description">Entre com seus dados pessoais</p>
                 <p class="description">para acessar suas pontuações anteriores!</p>
-                <button class="btn"><a href="./login.html"> Entrar </a></button>
+                <button class="btn btn-primary"><a href="./login.html"> Entrar </a></button>
              </div>
-             <form class="formRegister">
-                <h2 class="title">Acesse Sua conta</h2>
-                <input type="text" placeholder="E-mail">
-                <input type="password" placeholder="Senha">
-                <a href="#">Esqueceu sua senha</a>
-                <button class="btn"> Entrar </button>
-            </form> 
+             <div class="second-colun">
+                <form id="formLogin" class="formulario">
+                    <h2 class="title">Acesse Sua conta</h2>
+                    <input id="email" type="email" placeholder="E-mail" required>
+                    <input id="password" type="password" placeholder="Senha" required>
+                    <a href="#">Esqueceu sua senha</a>
+                    <button type="submit" class="btn btn-secondary"> Entrar </button>
+                </form> 
+            </div>
         </div>
+    </div>
         <script src="../js/login.js"></script>
 </body>
 </html>

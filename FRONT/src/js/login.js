@@ -19,9 +19,9 @@ document.getElementById('registerForm')?.addEventListener('submit', async functi
     
 })
 
-document.getElementById('formRegister')?.addEventListener('submit', async function(e){
+document.getElementById('loginForm')?.addEventListener('submit', async function(e){
     e.preventDefault();
-    const email = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
     const response = await fetch('http://localhost:3000/login', {
