@@ -72,7 +72,7 @@ h3{
 .container{
     display: flex;
     justify-content: center;
-    height: 65vh;
+    height: 35vh;
     padding: 25vh;
     border-radius: 10px;
     align-items: center;
@@ -90,16 +90,13 @@ h3{
     content: "";
     position: absolute;
     background-color: #580b4ade;
-    width: 40%;
+    width: 55%;
     height: 100%;
     z-index: 1;
     border-radius: 15px;
-    /*
-    left: 60%;*/
+    left: 45%;
     display: flex;
     justify-content: center;
-    /*margin-top: 20vw;
-    margin-left: 45vh;*/
 }
 .first-content{
     display: flex;
@@ -136,7 +133,7 @@ p{
 }
 .first-colun{
     text-align: center;
-    margin-right: 10vw;
+    margin-right: 5vw;
     margin-top: 55px;
     flex: 1 0 auto;
     z-index: 2;
@@ -192,7 +189,7 @@ button{
 }
 input{
     border-radius: 10px;    
-    margin-top: 3px;
+    margin-top: 4px;
     text-align: center;
     border: none;
 }
