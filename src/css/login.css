@@ -94,14 +94,17 @@ h3{
     height: 100%;
     z-index: 1;
     border-radius: 15px;
-    left: 45%;
+    left: 0;
     display: flex;
     justify-content: center;
 }
 .first-content{
     display: flex;
     margin-left: 20px;
-    display: none;
+    
+}
+.first-content .second-colun{
+    z-index: 12;
 }
 .formulario{
     display: flex;
@@ -127,17 +130,22 @@ p{
 }
 .second-content .first-colun{
     order: 2;
+   z-index: -1;
+   opacity: 0;
 }
 .second-content .second-colun{
     order: 1;
+}
+.first-content .first-colun{
+    z-index: 12;
 }
 .first-colun{
     text-align: center;
     margin-right: 5vw;
     margin-top: 55px;
     flex: 1 0 auto;
-    z-index: 2;
     margin-left: 40px;
+    z-index: 10;
 }
 .first-colun .title{
     margin-bottom: 10px;
@@ -197,4 +205,24 @@ a{
     text-decoration: none;
     color: #fff;
     margin-top: 2px;
+}
+.entrar-js .first-content .first-colun, .entrar-js .first-content .second-colun{
+    z-index: -1;
+    opacity: 0;
+}
+.entrar-js .second-content .first-colun, .entrar-js .second-content .second-colun{
+    z-index: 12;
+}
+.entrar-js .content::before{
+    left: 45%;
+}
+.inscrever-js .second-content .first-colun, .increver-js .second-colun{
+    z-index: -1;
+    opacity: 0;
+}
+.inscrever-js .first-content .first-colun, .increver-js .second-colun{
+    z-index: 12;
+}
+.increver-js .content::before{
+    left: 0;
 }

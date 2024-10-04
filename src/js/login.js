@@ -1,18 +1,3 @@
-const firstContent = document.getElementsByClassName('.first-content')
-const secondContent = document.getElementsByClassName('.second-content')
-const toggleToSecond = document.getElementById('.toggleToSecond')
-const toggleToFirst = document.getElementById('.toggleToFirst')
-
-toggleToSecond.addEventListener('click', () => {
-    firstContent.classList.remove('active');
-    secondContent.classList.add('active');
-})
-
-toggleToFirst.addEventListener('click', () => {
-    secondContent.classList.remove('active');
-    firstContent.classList.add('active');
-})
-
 document.getElementById('registerForm')?.addEventListener('submit', async function(e) {
     e.preventDefault();
     const name = document.getElementById('name').value;
