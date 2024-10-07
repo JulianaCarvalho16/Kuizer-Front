@@ -90,7 +90,7 @@ h3{
     content: "";
     position: absolute;
     background-color: #580b4ade;
-    width: 55%;
+    width: 45%;
     height: 100%;
     z-index: 1;
     border-radius: 15px;
@@ -101,10 +101,46 @@ h3{
 .first-content{
     display: flex;
     margin-left: 20px;
-    
+}
+.second-content{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+.first-colun{
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 20px;
+    flex: 1 0 auto;
+}
+.second-colun{
+    flex: 2 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 25px;
+
+}
+.first-content .first-colun{
+    z-index: 12;
 }
 .first-content .second-colun{
     z-index: 12;
+}
+.first-colun .title{
+    margin-bottom: 10px;
+}
+.second-content .first-colun{
+    order: 2;
+    z-index: -1;
+    opacity: 0;
+}
+.second-content .second-colun{
+    order: 2;
+    z-index: -1;
+    opacity: 0;
 }
 .formulario{
     display: flex;
@@ -112,117 +148,78 @@ h3{
     margin-top: 8px;
 }
 .title{
-    margin-left: 15px;
+    margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
     text-transform: capitalize; /* deixar as primeiras letras em cacha alta*/
-    justify-content: center;
+    justify-self: center;
 }
 p{
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
 }
-.second-content{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-}
-.second-content .first-colun{
-    order: 2;
-   z-index: -1;
-   opacity: 0;
-}
-.second-content .second-colun{
-    order: 1;
-}
-.first-content .first-colun{
-    z-index: 12;
-}
-.first-colun{
-    text-align: center;
-    margin-right: 5vw;
-    margin-top: 55px;
-    flex: 1 0 auto;
-    margin-left: 40px;
-    z-index: 10;
-}
-.first-colun .title{
-    margin-bottom: 10px;
-}
 button{
     border-radius: 15px;
     margin-top: 1rem;
     margin-left: 15px;
     width: 150px;
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
+    border: 1px solid #fff;
+    text-align: center;
+    text-decoration: none;
 }
 .btn-primary{
     background-color: transparent;
-    font-size: 10px;
+    font-size: 12px;
     padding: 10px 8px;
     border: 1px solid #fff;
-    border-radius: 10px;
-    color: #fff;
     text-decoration: none;
+    color: #fff;
+}
+.btn-secundary{
+    background-color: transparent;
+    font-size: 12px;
+    padding: 10px 8px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
 }
 .btn-primary:hover{
-    background-color: white;
-    color: #580b4a;
-    align-self: center;
-}
-.second-colun{
-    flex: 2 0 auto;
-    margin-right: 20px;
-    margin-top: 25px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.btn-secondary{
-    background-color: transparent;
-    font-size: 10px;
-    padding: 10px 8px;
-    border: 1px solid #fff;
-    border-radius: 10px;
+    background-color: #833875;
     color: #fff;
-}
-.btn-secondary:hover{
-    background-color: white;
-    color: #130b58;
+    align-items: center;
     font-weight: bold;
 }
+.btn-secundary:hover{
+    background-color: #544ba7;
+    font-weight: bold;
+    align-items: center;
+}
 input{
-    border-radius: 10px;    
+    border-radius: 10px;
     margin-top: 4px;
     text-align: center;
     border: none;
 }
 a{
-    text-decoration: none;
     color: #fff;
     margin-top: 2px;
+    text-decoration: none;
 }
 .entrar-js .first-content .first-colun, .entrar-js .first-content .second-colun{
     z-index: -1;
     opacity: 0;
 }
 .entrar-js .second-content .first-colun, .entrar-js .second-content .second-colun{
-    z-index: 12;
+    z-index: 15;
 }
 .entrar-js .content::before{
-    left: 45%;
+    left: 55%;
 }
-.inscrever-js .second-content .first-colun, .increver-js .second-colun{
+.inscrever-js .second-content .first-colun, .inscrever-js .second-content .second-colun{
     z-index: -1;
     opacity: 0;
 }
-.inscrever-js .first-content .first-colun, .increver-js .second-colun{
-    z-index: 12;
-}
-.increver-js .content::before{
-    left: 0;
+.inscrever-js .first-content .first-colun, .entrar-js .first-content .second-colun{
+    z-index: 18;
 }
