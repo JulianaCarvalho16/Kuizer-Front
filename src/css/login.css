@@ -85,6 +85,7 @@ h3{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    border-radius: 15px;
 }
 .content::before{
     content: "";
@@ -93,10 +94,11 @@ h3{
     width: 45%;
     height: 100%;
     z-index: 1;
-    border-radius: 15px;
     left: 0;
     display: flex;
     justify-content: center;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
 .first-content{
     display: flex;
@@ -146,6 +148,7 @@ h3{
     display: flex;
     flex-direction: column;
     margin-top: 8px;
+    align-items: c;
 }
 .title{
     margin-top: 15px;
@@ -176,7 +179,7 @@ button{
     text-decoration: none;
     color: #fff;
 }
-.btn-secundary{
+.btn-secondary{
     background-color: transparent;
     font-size: 12px;
     padding: 10px 8px;
@@ -190,7 +193,7 @@ button{
     align-items: center;
     font-weight: bold;
 }
-.btn-secundary:hover{
+.btn-secondary:hover{
     background-color: #544ba7;
     font-weight: bold;
     align-items: center;
@@ -206,20 +209,48 @@ a{
     margin-top: 2px;
     text-decoration: none;
 }
-.entrar-js .first-content .first-colun, .entrar-js .first-content .second-colun{
+.second-content .first-colun, .second-content .second-colun {
+    order: 2;
     z-index: -1;
     opacity: 0;
+    pointer-events: none; /* Previne interação quando invisível */
 }
-.entrar-js .second-content .first-colun, .entrar-js .second-content .second-colun{
+
+.entrar-js .first-content .first-colun, 
+.entrar-js .first-content .second-colun {
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.entrar-js .second-content .first-colun, 
+.entrar-js .second-content .second-colun {
     z-index: 15;
+    opacity: 1;
+    pointer-events: auto; /* Permite interação */
 }
-.entrar-js .content::before{
+
+.entrar-js .content::before {
     left: 55%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
-.inscrever-js .second-content .first-colun, .inscrever-js .second-content .second-colun{
+
+.inscrever-js .second-content .first-colun, 
+.inscrever-js .second-content .second-colun {
     z-index: -1;
     opacity: 0;
+    pointer-events: none;
 }
-.inscrever-js .first-content .first-colun, .entrar-js .first-content .second-colun{
+
+.inscrever-js .first-content .first-colun, 
+.inscrever-js .first-content .second-colun {
     z-index: 18;
+    opacity: 1;
+    pointer-events: auto;
+}
+.inscrever-js .content::before{
+    left: 0;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
