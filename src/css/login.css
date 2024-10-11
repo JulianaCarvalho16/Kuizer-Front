@@ -99,6 +99,7 @@ h3{
     justify-content: center;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
+
 }
 .first-content{
     display: flex;
@@ -108,6 +109,7 @@ h3{
     position: absolute;
     display: flex;
     justify-content: space-around;
+    flex-direction: row-reverse;
 }
 .first-colun{
     text-align: center;
@@ -136,13 +138,9 @@ h3{
 }
 .second-content .first-colun{
     order: 2;
-    z-index: -1;
-    opacity: 0;
 }
 .second-content .second-colun{
-    order: 2;
-    z-index: -1;
-    opacity: 0;
+    order: 1;
 }
 .formulario{
     display: flex;
@@ -209,6 +207,9 @@ a{
     margin-top: 2px;
     text-decoration: none;
 }
+.content {
+    transition: all 0.5s ease-in-out;
+}
 .second-content .first-colun, .second-content .second-colun {
     order: 2;
     z-index: -1;
@@ -234,6 +235,8 @@ a{
     left: 55%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
 }
 
 .inscrever-js .second-content .first-colun, 
